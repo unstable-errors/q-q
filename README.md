@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/github/repo-size/unstable-errors/q-q?style=for-the-badge"/>
     <img src="https://img.shields.io/github/languages/top/unstable-errors/q-q?style=for-the-badge"/>
     <img src="https://img.shields.io/github/downloads/unstable-errors/q-q/total?style=for-the-badge"/>
-    <img src="https://img.shields.io/github/workflow/status/unstable-errors/q-q/Cargo%20build,%20testing%20and%20linting?style=for-the-badge"/>
+    <img src="https://img.shields.io/github/workflow/status/unstable-errors/q-q/Rust?style=for-the-badge"/>
     <img src="https://img.shields.io/github/commit-activity/m/unstable-errors/q-q?style=for-the-badge"/>
   </p>
 
