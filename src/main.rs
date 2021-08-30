@@ -1,61 +1,63 @@
-use terminal_menu::{submenu, back_button, menu, label, button, run, mut_menu};
+use dialoguer::{theme::ColorfulTheme, Select};
 
-mod games;
+pub mod menu_handler;
+pub mod other;
+pub mod games;
 
-fn main()
-{
+fn main() {
+    let selections = &[
+        "Apps",
+        "Games",
+        "Other",
+        "Exit",
+    ];
+    let appslist = &[
+        "Exit",
+    ];
+    let gameslist = &[
+        "guessing_game",
+        "Exit",
+    ];
+    let otherlist = &[
+        "python",
+        "Exit",
+    ];
 
-    let menu = menu(vec![
-
-        // label:
-        //  not selectable, usefule as a title, separator, etc...
-        label("----------------------"),
-        label("quantity>quality"),
-        label("use wasd or arrow keys"),
-        label("enter to select"),
-        label("'q' or esc to exit"),
-        label("-----------------------"),
-
-        submenu("games", vec![
-
-            // button:
-            //  buttons exit all the menus
-            button("guessing game"),
-            back_button("back")
-
-        ]),
-        submenu("applications", vec![
-
-            // button:
-            //  buttons exit all the menus
-            label("Oops! Nothing here!"),
-            back_button("back"),
-
-        ]),
-        submenu("other", vec![
-
-            // button:
-            //  buttons exit all the menus
-            label("Nothing to see here.."),
-            back_button("back"),
-
-        ]),
-
-        button("exit")
-
-    ]);
-    run(&menu);
-
-    // name of the menu active before exiting [DEBUG]
-    // println!("{:?}", mut_menu(&menu).get_latest_menu_name());
-
-    // pull values [DEBUG]
-    // println!("{}", mut_menu(&menu).get_submenu("sub").selection_value("scr"));
-    
-    if mut_menu(&menu).selected_item_name() == "exit" {
-        println!("Goodbye!");
+    let selection = Select::with_theme(&ColorfulTheme::default())
+        .with_prompt("What category?")
+        .default(0)
+        .items(&selections[..])
+        .interact()
+        .unwrap();
+        menu_handler::launch_app(selections[selection]);
+    if selections[selection] == "Apps"
+    {
+        let selection = Select::with_theme(&ColorfulTheme::default())
+            .with_prompt("What app?")
+            .default(0)
+            .items(&appslist[..])
+            .interact()
+            .unwrap();
+        menu_handler::launch_app(appslist[selection]);
     }
-    if mut_menu(&menu).get_submenu("games").selected_item_name() == "guessing game" {
-        games::guessing_game::guessing_game();
+    else if selections[selection] == "Games"
+    {
+        let selection = Select::with_theme(&ColorfulTheme::default())
+            .with_prompt("What app?")
+            .default(0)
+            .items(&gameslist[..])
+            .interact()
+            .unwrap();
+        menu_handler::launch_app(gameslist[selection]);
+    }
+    else if selections[selection] == "Other"
+    {
+        let selection = Select::with_theme(&ColorfulTheme::default())
+            .with_prompt("What app?")
+            .default(0)
+            .items(&otherlist[..])
+            .interact()
+            .unwrap();
+        menu_handler::launch_app(otherlist[selection]);
     }
 }
