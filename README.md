@@ -24,30 +24,31 @@ To compile/install/run q>q, you need rust, which you can install [here](https://
  - [Running](#Running)
  - [Credits](#Credits)
 
-# Installing
+### Installing
 
 To install q>q, you need to compile the source code and run `cargo install --path=.` in the directory of the compiled source code.
 
-# Compiling
+### Compiling
 
 If you want to compile but not install or run q>q, all you need to do is run `cargo build` in the directory of the source code to compile it.
 
-# Running
+### Running
 
 To run q>q, you need to install q>q and run `cargo run` in the directory of the installation.
 
+# Recources
+
+ - [Wiki](https://github.com/unstable-errors/q-q/wiki)
+ - [Rust](https://www.rust-lang.org/)
+
 # Credits
 
-[Soup](https://github.com/SoupDevHub) - Main Documentor
+[Soup](https://github.com/SoupDevHub) - Main Documentor, Windows testing
 > OS: Windows
 >
 > Langs: JS, Python, Does C# off github
->
-> Fun Fact: He called his projects "Trash projects".. even though electron thinks they're awesome!
 
 [electron271](https://github.com/electron271) - Development, Documentation, Linux testing and Github Actions
 > OS: Linux
 > 
 > Langs: Shell, Rust, C++, used to do Python
-> 
-> Fun Fact: He thinks his projects are trash also..
