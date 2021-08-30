@@ -17,6 +17,10 @@ q>q is not designed to be useful. It is a proof of concept application and also 
     <img src="https://img.shields.io/github/commit-activity/m/unstable-errors/q-q?style=for-the-badge"/>
   </p>
 
+# Is this actully useful in any way?
+
+q>q is not designed to be useful. It is a proof of concept application and also just a fun application to use when you're bored!
+
 # Documentation
 
 To compile/install/run q-q, you need rust, which you can install [here](https://www.rust-lang.org/tools/install). You will also need to run `git clone https://github.com/unstable-errors/q-q.git` if you're on Linux/MacOS. If you're on Windows download and unzip the zip file of the source code. Right now, we are still in pre-alpha, if we had releases yet, you would get the source code from the release, if you want to know if you can even compile it, if theres a little X symbol next to the commit, something went wrong with compiling it on one platform (or github actions is bugging try compiling it yourself anyways)
