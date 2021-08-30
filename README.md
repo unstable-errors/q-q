@@ -1,7 +1,7 @@
 <p align="center">
  <h1 align="center">q>q</h1>
  <h3 align="center">Quantity > Quality</h3>
- <h5 align="center">Ever heard of the saying <code>quality over quantity</code>? Well this reversed that saying. This will try to fit as many projects into one application</h5>
+ <h6 align="center">Ever heard of the saying <code>quality over quantity</code>? Well this reversed that saying. This will try to fit as many projects into one application</h6>
 </p>
   <p align="center">
     <img src="https://img.shields.io/github/repo-size/unstable-errors/q-q?style=for-the-badge"/>
@@ -17,7 +17,7 @@ q>q is not designed to be useful. It is a proof of concept application and also 
 
 # Documentation
 
-To compile/install/run q>q, you need rust, which you can install [here](https://www.rust-lang.org/tools/install). You will also need to run `git clone https://github.com/unstable-errors/q>q.git` if you're on Linux/MacOS. If you're on Windows download and unzip the zip file of the source code. Right now, we are still in pre-alpha, if we had releases yet, you would get the source code from the release, if you want to know if you can even compile it, if theres a little X symbol next to the commit, something went wrong with compiling it on one platform (or github actions is bugging try compiling it yourself anyways)
+To compile/install/run q>q, you need rust, which you can install [here](https://www.rust-lang.org/tools/install). You will also need to run `git clone https://github.com/unstable-errors/q>q.git` if you're on Linux/MacOS. If you're on Windows download and unzip the zip file of the source code. If there is a release, get the source code (or the binary and run that!)
 
  - [Installing](#Installing)
  - [Compiling](#Compiling)
