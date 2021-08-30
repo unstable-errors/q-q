@@ -15,7 +15,7 @@ pub fn python() -> PyResult<()> {
         println!("Hello {}, I'm Python {}! Please enter some python code below.", user, version);
         let code: String = Input::with_theme(&ColorfulTheme::default())
             .with_prompt("Code:")
-            .default("print('hi')".to_string())
+            .default("print('Hello World!')".to_string())
             .interact_text()
             .unwrap();
         

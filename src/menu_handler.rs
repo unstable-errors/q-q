@@ -15,6 +15,10 @@ pub fn launch_app(app: &str)
     {
         other::python::python();
     }
+    else if app == "progress_bar_test"
+    {
+        other::progress_bar_test::progress_bar_test();
+    }
     else
     {
         // println!("error: {} not found", app);

@@ -12,6 +12,7 @@ fn main() {
         "Exit",
     ];
     let appslist = &[
+        "progress_bar_test",
         "Exit",
     ];
     let gameslist = &[
