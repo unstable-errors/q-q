@@ -43,7 +43,7 @@ To run q>q, you need to install q>q and run `cargo run` in the directory of the 
 >
 > Langs: JS, Python, Does C# off github
 >
-> Fun Fact: I called my projects "Trash projects".. even though electron thinks they're awesome!
+> Fun Fact: He called his projects "Trash projects".. even though electron thinks they're awesome!
 
 [electron271](https://github.com/electron271) - Development, Documentation, Linux testing and Github Actions
 > OS: Linux
