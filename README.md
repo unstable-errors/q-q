@@ -17,7 +17,7 @@ q>q is not designed to be useful. It is a proof of concept application and also 
 
 # Documentation
 
-To compile/install/run q>q, you need rust, which you can install [here](https://www.rust-lang.org/tools/install). You will also need to run `git clone https://github.com/unstable-errors/q>q.git` if you're on Linux/MacOS. If you're on Windows download and unzip the zip file of the source code. If there is a release, get the source code (or the binary and run that!)
+To compile/install/run q>q, you need rust, which you can install [here](https://www.rust-lang.org/tools/install). You will also need to run `git clone https://github.com/unstable-errors/q-q.git` if you're on Linux/MacOS. If you're on Windows download and unzip the zip file of the source code. If there is a release, get the source code (or the binary and run that!)
 
  - [Installing](#Installing)
  - [Compiling](#Compiling)
