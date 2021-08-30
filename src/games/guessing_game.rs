@@ -8,7 +8,7 @@ pub fn guessing_game() {
     let secret_number = rand::thread_rng().gen_range(1..101);
 
     loop {
-        println!("Please input your guess.");
+        println!("Please input your guess. (1-100)");
 
         let mut guess = String::new();
 
@@ -21,7 +21,7 @@ pub fn guessing_game() {
             Err(_) => continue,
         };
 
-        println!("You guessed: {}", guess);
+        // println!("You guessed: {}", guess);
 
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("Too small!"),
