@@ -1,0 +1,166 @@
+# This is a basic workflow that is manually triggered
+
+name: Release build
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      flags:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'flags'
+        # Default value if no value is explicitly provided
+        default: '--release --verbose'
+        # Input has to be provided for the workflow to run
+        required: true
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  rust_linux:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          # Ubuntu
+          - os: ubuntu-latest
+            target: x86_64-pc-windows-gnu
+            rust: stable
+
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            rust: beta
+
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            rust: nightly
+
+          - os: ubuntu-latest
+            target: i686-unknown-linux-gnu
+            rust: stable
+
+          - os: ubuntu-latest
+            target: i686-unknown-linux-gnu
+            rust: beta
+
+          - os: ubuntu-latest
+            target: i686-unknown-linux-gnu
+            rust: nightly
+
+          - os: ubuntu-latest
+            target: aarch64-unknown-linux-gnu
+            rust: stable
+
+          - os: ubuntu-latest
+            target: aarch64-unknown-linux-gnu
+            rust: beta
+
+          - os: ubuntu-latest
+            target: aarch64-unknown-linux-gnu
+            rust: nightly
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install rust toolchain
+      uses: actions-rs/toolchain@v1
+      with:
+          toolchain: ${{ matrix.rust }}
+          target: ${{ matrix.target }}
+          override: true
+          components: rustfmt, clippy
+    - name: Build
+      run: cargo build --verbose
+    - name: Lint
+      run: cargo clippy --verbose
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        # Artifact name
+        name: q-q
+        # A file, directory or wildcard pattern that describes what to upload
+        path: /target/
+        # The desired behavior if no files are found using the provided path.
+  
+  rust_macos:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          # MacOS
+          - os: macos-latest
+            target: x86_64-apple-darwin
+            rust: stable
+
+          - os: macos-latest
+            target: x86_64-apple-darwin
+            rust: beta
+
+          - os: macos-latest
+            target: x86_64-apple-darwin
+            rust: nightly
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install rust toolchain
+      uses: actions-rs/toolchain@v1
+      with:
+          toolchain: ${{ matrix.rust }}
+          target: ${{ matrix.target }}
+          override: true
+          components: rustfmt, clippy
+          
+    - name: Build
+      run: cargo build --verbose
+    - name: Lint
+      run: cargo clippy --verbose
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        # Artifact name
+        name: q-q
+        # A file, directory or wildcard pattern that describes what to upload
+        path: /target/
+        # The desired behavior if no files are found using the provided path.
+  
+  rust_windows:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          # Windows
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            rust: stable
+
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            rust: beta
+
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            rust: nightly
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install rust toolchain
+      uses: actions-rs/toolchain@v1
+      with:
+          toolchain: ${{ matrix.rust }}
+          target: ${{ matrix.target }}
+          override: true
+          components: rustfmt, clippy
+    - name: Build
+      run: cargo build --verbose
+    - name: Lint
+      run: cargo clippy --verbose
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        # Artifact name
+        name: q-q
+        # A file, directory or wildcard pattern that describes what to upload
+        path: /target/
+        # The desired behavior if no files are found using the provided path.
