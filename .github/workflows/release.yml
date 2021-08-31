@@ -72,9 +72,9 @@ jobs:
           override: true
           components: rustfmt, clippy
     - name: Build
-      run: cargo build --verbose
+      run: cargo build ${{ github.event.inputs.flags }}
     - name: Lint
-      run: cargo clippy --verbose
+      run: cargo clippy ${{ github.event.inputs.flags }}
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.4
       with:
@@ -113,9 +113,9 @@ jobs:
           components: rustfmt, clippy
           
     - name: Build
-      run: cargo build --verbose
+      run: cargo build ${{ github.event.inputs.flags }}
     - name: Lint
-      run: cargo clippy --verbose
+      run: cargo clippy ${{ github.event.inputs.flags }}
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.4
       with:
@@ -153,9 +153,9 @@ jobs:
           override: true
           components: rustfmt, clippy
     - name: Build
-      run: cargo build --verbose
+      run: cargo build ${{ github.event.inputs.flags }}
     - name: Lint
-      run: cargo clippy --verbose
+      run: cargo clippy ${{ github.event.inputs.flags }}
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.4
       with:
