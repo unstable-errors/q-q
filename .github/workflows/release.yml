@@ -79,7 +79,7 @@ jobs:
       uses: actions/upload-artifact@v2.2.4
       with:
         # Artifact name
-        name: q-q
+        name: q-q-linux
         # A file, directory or wildcard pattern that describes what to upload
         path: target/
         # The desired behavior if no files are found using the provided path.
@@ -120,7 +120,7 @@ jobs:
       uses: actions/upload-artifact@v2.2.4
       with:
         # Artifact name
-        name: q-q
+        name: q-q-macos
         # A file, directory or wildcard pattern that describes what to upload
         path: target/
         # The desired behavior if no files are found using the provided path.
@@ -160,7 +160,7 @@ jobs:
       uses: actions/upload-artifact@v2.2.4
       with:
         # Artifact name
-        name: q-q
+        name: q-q-windows
         # A file, directory or wildcard pattern that describes what to upload
         path: target/
         # The desired behavior if no files are found using the provided path.
