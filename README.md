@@ -1,7 +1,7 @@
 <p align="center">
  <h1 align="center">q>q</h1>
  <h3 align="center">Quantity > Quality</h3>
- <h6 align="center">Ever heard of the saying <code>quality over quantity</code>? Well this reversed that saying. This will try to fit as many projects into one application</h6>
+ <h6 align="center">fit as many applications into a single rust program as possible</h6>
 </p>
   <p align="center">
     <img src="https://img.shields.io/github/repo-size/unstable-errors/q-q?style=for-the-badge"/>
