@@ -1,4 +1,3 @@
-// labels: APPS, TIME
 use chrono::{DateTime, Local};
 use colored::*;
 use std::{thread, time};

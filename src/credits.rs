@@ -1,4 +1,3 @@
-// labels: ABOUT
 use crossterm::{
     cursor::{Hide, Show},
     event::{self, Event, KeyCode::*, KeyEvent},

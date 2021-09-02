@@ -1,4 +1,3 @@
-// labels: CORE, MENU
 use dialoguer::{theme::ColorfulTheme, Select}; // menu
 
 pub mod apps; // get the apps

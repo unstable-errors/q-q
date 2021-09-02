@@ -1,4 +1,3 @@
-// labels: CORE, MENU
 use crate::apps;
 use crate::credits; // credits
 use crate::games; // games
