@@ -4,12 +4,14 @@ use dialoguer::{theme::ColorfulTheme, Select}; // menu
 pub mod games; // get the games
 pub mod menu_handler; // get the menu handler
 pub mod other; // get the other apps
+pub mod credits; // credits
 
 fn main() {
-    let selections = &["Apps", "Games", "Other", "Exit"]; // types of apps
+    let selections = &["Apps", "Games", "Other", "About", "Exit"]; // types of apps
     let appslist = &["Exit"]; // apps
     let gameslist = &["guessing_game", "Exit"]; // games
     let otherlist = &["progress_bar_test", "python", "Exit"]; // other
+    let aboutlist = &["credits", "Exit"]; // about
 
     let selection = Select::with_theme(&ColorfulTheme::default()) // get category
         .with_prompt("What category?")
@@ -42,5 +44,13 @@ fn main() {
             .interact()
             .unwrap();
         menu_handler::launch_app(otherlist[selection]); // launch other
+    } else if selections[selection] == "About" {
+        let selection = Select::with_theme(&ColorfulTheme::default()) // choose about
+            .with_prompt("Choose an option")
+            .default(0)
+            .items(&aboutlist[..])
+            .interact()
+            .unwrap();
+        menu_handler::about(aboutlist[selection]); // launch about
     }
 }
