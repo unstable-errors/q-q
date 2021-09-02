@@ -1,8 +1,8 @@
 // labels: CORE, MENU
-use crate::games; // games
-use crate::other; // other
+use crate::apps;
 use crate::credits; // credits
-use crate::apps; // apps
+use crate::games; // games
+use crate::other; // other // apps
 
 pub fn launch_app(app: &str) {
     if app == "Exit" {
@@ -10,7 +10,9 @@ pub fn launch_app(app: &str) {
     } else if app == "guessing_game" {
         games::guessing_game::guessing_game();
     } else if app == "python" {
-        other::python::python().map_err(|err| println!("{:?}", err)).ok();
+        other::python::python()
+            .map_err(|err| println!("{:?}", err))
+            .ok();
         other::progress_bar_test::progress_bar_test();
     } else if app == "progress_bar_test" {
         other::progress_bar_test::progress_bar_test();

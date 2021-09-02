@@ -1,21 +1,10 @@
 // labels: ABOUT
 use crossterm::{
-    cursor::{ Hide, Show},
-    event::{
-        self,
-        Event,
-        KeyEvent,
-        KeyCode::*,
-    },
+    cursor::{Hide, Show},
+    event::{self, Event, KeyCode::*, KeyEvent},
     queue,
-    terminal::{
-        self,
-        Clear,
-        ClearType,
-        EnterAlternateScreen,
-        LeaveAlternateScreen,
-    },
     style::Color::*,
+    terminal::{self, Clear, ClearType, EnterAlternateScreen, LeaveAlternateScreen},
 };
 use std::io::{stderr, Write};
 use termimad::*;
@@ -36,15 +25,13 @@ fn run_app(skin: MadSkin) -> Result<(), Error> {
         view.write_on(&mut w)?;
         w.flush()?;
         match event::read() {
-            Ok(Event::Key(KeyEvent{code, ..})) => {
-                match code {
-                    Up => view.try_scroll_lines(-1),
-                    Down => view.try_scroll_lines(1),
-                    PageUp => view.try_scroll_pages(-1),
-                    PageDown => view.try_scroll_pages(1),
-                    _ => break,
-                }
-            }
+            Ok(Event::Key(KeyEvent { code, .. })) => match code {
+                Up => view.try_scroll_lines(-1),
+                Down => view.try_scroll_lines(1),
+                PageUp => view.try_scroll_pages(-1),
+                PageDown => view.try_scroll_pages(1),
+                _ => break,
+            },
             Ok(Event::Resize(..)) => {
                 queue!(w, Clear(ClearType::All))?;
                 view.resize(&view_area());

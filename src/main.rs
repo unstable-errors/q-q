@@ -1,11 +1,11 @@
 // labels: CORE, MENU
 use dialoguer::{theme::ColorfulTheme, Select}; // menu
 
+pub mod apps; // get the apps
+pub mod credits;
 pub mod games; // get the games
 pub mod menu_handler; // get the menu handler
-pub mod other; // get the other apps
-pub mod apps; // get the apps
-pub mod credits; // credits
+pub mod other; // get the other apps // credits
 
 fn main() {
     let selections = &["Apps", "Games", "Other", "About", "Exit"]; // types of apps
