@@ -14,11 +14,8 @@ on:
         default: '--release --verbose'
         # Input has to be provided for the workflow to run
         required: true
-
-
 env:
   CARGO_TERM_COLOR: always
-
 jobs:
   rust_linux:
     runs-on: ${{ matrix.os }}
