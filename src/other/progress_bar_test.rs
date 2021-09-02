@@ -1,3 +1,4 @@
+// labels: MISC
 use std::thread;
 use std::time::Duration;
 

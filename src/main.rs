@@ -1,3 +1,4 @@
+// labels: CORE, MENU
 use dialoguer::{theme::ColorfulTheme, Select}; // menu
 
 pub mod games; // get the games
@@ -16,7 +17,7 @@ fn main() {
         .items(&selections[..])
         .interact()
         .unwrap();
-    menu_handler::launch_app(selections[selection]); // NEEDS_REWRITE (see line 1 in src/menu_handler.rs)
+    menu_handler::just_exit(selections[selection]);
     if selections[selection] == "Apps" {
         let selection = Select::with_theme(&ColorfulTheme::default()) // choose app
             .with_prompt("What app?")
