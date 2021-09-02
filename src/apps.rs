@@ -15,4 +15,4 @@
 // You should have received a copy of the GNU General Public License
 // along with q>q.  If not, see <http://www.gnu.org/licenses/>.
 
-pub mod guessing_game;
+pub mod clock;
