@@ -4,11 +4,12 @@ use dialoguer::{theme::ColorfulTheme, Select}; // menu
 pub mod games; // get the games
 pub mod menu_handler; // get the menu handler
 pub mod other; // get the other apps
+pub mod apps; // get the apps
 pub mod credits; // credits
 
 fn main() {
     let selections = &["Apps", "Games", "Other", "About", "Exit"]; // types of apps
-    let appslist = &["Exit"]; // apps
+    let appslist = &["clock", "Exit"]; // apps
     let gameslist = &["guessing_game", "Exit"]; // games
     let otherlist = &["progress_bar_test", "python", "Exit"]; // other
     let aboutlist = &["credits", "Exit"]; // about

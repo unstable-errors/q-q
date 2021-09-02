@@ -2,6 +2,7 @@
 use crate::games; // games
 use crate::other; // other
 use crate::credits; // credits
+use crate::apps; // apps
 
 pub fn launch_app(app: &str) {
     if app == "Exit" {
@@ -13,6 +14,8 @@ pub fn launch_app(app: &str) {
         other::progress_bar_test::progress_bar_test();
     } else if app == "progress_bar_test" {
         other::progress_bar_test::progress_bar_test();
+    } else if app == "clock" {
+        apps::clock::clock();
     } else {
         // debug code, uncomment if something doesnt seem to work just right DEBUG
         // println!("error: {} not found", app);
