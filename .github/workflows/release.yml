@@ -38,11 +38,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
-      - name: Display Python version
-        run: python -c "import sys; print(sys.version)"
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
 
     - name: Install rust toolchain
       uses: actions-rs/toolchain@v1
@@ -77,11 +77,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
-      - name: Display Python version
-        run: python -c "import sys; print(sys.version)"
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
 
     - name: Install rust toolchain
       uses: actions-rs/toolchain@v1
@@ -117,11 +117,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
-      - name: Display Python version
-        run: python -c "import sys; print(sys.version)"
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
 
     - name: Install rust toolchain
       uses: actions-rs/toolchain@v1
