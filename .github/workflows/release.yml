@@ -61,7 +61,7 @@ jobs:
         # Artifact name
         name: q-q-${{ matrix.target }}-${{ matrix.rust }}
         # A file, directory or wildcard pattern that describes what to upload
-        path: target/
+        path: target/release/q-q
         # The desired behavior if no files are found using the provided path
   
   rust_macos:
@@ -101,7 +101,7 @@ jobs:
         # Artifact name
         name: q-q-${{ matrix.target }}-${{ matrix.rust }}
         # A file, directory or wildcard pattern that describes what to upload
-        path: target/
+        path: target/release/q-q
         # The desired behavior if no files are found using the provided path.
   
   rust_windows:
@@ -140,5 +140,5 @@ jobs:
         # Artifact name
         name: q-q-${{ matrix.target }}-${{ matrix.rust }}
         # A file, directory or wildcard pattern that describes what to upload
-        path: target/
+        path: target/release/q-q.exe
         # The desired behavior if no files are found using the provided path.
