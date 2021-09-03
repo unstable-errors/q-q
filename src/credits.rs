@@ -83,7 +83,7 @@ Well, this will be a long trip.. use the up and down arrows to scroll (⇅)
 
 ## Documentation
 SoupDevHub - README.md (most of it)
-electron271 - README.md (minor changes), CONTRIBUTING.MD
+electron271 - README.md (minor changes), CONTRIBUTING.md
 
 ## Code
 electron271 - all of the code
@@ -102,7 +102,15 @@ q>q is not designed to be useful. It is a proof of concept application and also 
 
 Check out everyone mentioned (yes including yourself)
 
+## Any questions?
+If you have any further questions, make a issue
+Here are some simple questions:
 
-..now view some real application not this junk
 
+Let's be serious, thank you so much for viewing our application!
+I never thought anyone would even TRY this application! ♥
+As I say this of September 2, it's been 4 days since this has been made.
+This project was made because f̷̧̹̫͓̪͎̮̠͓̙̝̯̫͙͇̼̯̌͋̈̐̓͋̅̎̔̀̈́̉͛̂͑̏̈́̆̄̏͂̍̒̽̊͗̇͐̕̕̕̚͜͝͠͠͠͝ͅį̴̨̛̛͕̬̫̝̼̫͈̯͙̼͚̮̞̈́͐̉̅͂͐̆͂͆̇̒̇̋̔̾̋̋͌̐̎̒̒̏̀̍̂͒̓̄̒̈́͂̎͊́̔́͘̕͜͝͠͝͠ͅs̴̡̡̢̛̮̥͎̞͚̥͔̗͎̭̻̺̫̺̺̗̖̜̻̤̭̪̝̗̙̻̞̮̙̣̦̻̘̾̋̈́̍̅͋̀͗̈́̆̀̽̃̉̿͐̾̾̈́̀̇̒̉̂͒̃͌̇͗͛͌̀͌̉́͘͘͝͠͠͝ ̵̢̨̨̯̯̦͈͉̳̜͈̞̠̰̮̫͔͇̗͉͕͙̣̹̠̜̮̳͙͕͈̌̿̄͜ͅ
+
+Press [Q] or [esc] to exit
 "#;
