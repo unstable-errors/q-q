@@ -10,11 +10,7 @@
     <img src="https://img.shields.io/github/workflow/status/unstable-errors/q-q/Rust?style=for-the-badge"/>
     <img src="https://img.shields.io/github/commit-activity/m/unstable-errors/q-q?style=for-the-badge"/>
   </p>
-
-# Is this actully useful in any way?
-
-q>q is not designed to be useful. It is a proof of concept application and also just a fun application to use when you're bored!
-
+  
 # Documentation
 
 To compile/install/run q>q, you need rust, which you can install [here](https://www.rust-lang.org/tools/install). You will also need to run `git clone https://github.com/unstable-errors/q-q.git` if you're on Linux/MacOS. If you're on Windows download and unzip the zip file of the source code. If there is a release, get the source code (or the binary and run that!)
