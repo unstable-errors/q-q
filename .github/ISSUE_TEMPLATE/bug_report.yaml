@@ -40,6 +40,7 @@ body:
     id: browsers
     attributes:
       label: What version are you seeing the problem on?
+      description: Git version is the direct code, Automatic build is builds produced by Github Actions, and Releases are from a release.
       multiple: true
       options:
         - Git
