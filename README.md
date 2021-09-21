@@ -34,7 +34,7 @@ To run q>q, you need to install q>q and run `cargo run` in the directory of the 
 
 # Recources
 
- - [Docs (WIP)](docs/docs.md)
+ - [Wiki](https://github.com/unstable-errors/q-q/wiki)
  - [Rust](https://www.rust-lang.org/)
 
 # Credits
