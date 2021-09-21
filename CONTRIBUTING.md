@@ -10,12 +10,10 @@
     <img src="https://img.shields.io/github/commit-activity/m/unstable-errors/q-q?style=for-the-badge"/>
   </p>
 
+
 # Welcome!
 This is a simple guide of how to contribute to q>q! There are many ways to contribute to this!
-To contribute, you will need to know [rust](https://rust-lang.org). To learn it you can view the rust book (online, free)!
-
-## Contributing via issue
-This is the most simple one. To do it you need to make a detailed issue not just `this program errors on build`. You can also make from a issue template (coming soon)
+To contribute with code, you will need to know [rust](https://rust-lang.org). To learn it you can view the rust book (online, free)!
 
 ## Contributing code via pull request
 Before we start, there are minimal comments (adding some more soon), so you're just stuck with this and your skills (more documentation coming soon)
@@ -29,9 +27,9 @@ For this example, we will add a new app:
 5. Go to src/main.rs and to the variable *type*list add the name of your program to it
 6. Go to src/menu_handler.rs and add this above the else statement (replace name and type to the name and type of the program)
 ```rust
-else if app == "progress_bar_test"
+else if app == "name"
 {
-    other::progress_bar_test::progress_bar_test();
+    type::name::name();
 }
 ```
 7. Run `cargo run` to test everything
@@ -39,5 +37,5 @@ else if app == "progress_bar_test"
 9. Make a pull request across your fork's branch and the main branch for the main repo
 10. Wait for a review
 
-Tips:
-If you need to add any dependencies, add them to Cargo.toml
+Replace anything in italics with the actual name.
+The types are `other, games, apps`
