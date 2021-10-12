@@ -12,7 +12,7 @@
 
 
 # Compiling
-q>q will need rust to be compiled, so download it [here](https://rust-lang.org). Once you've downloaded rust, also install python for the python demo. After that, clone the repo:
+q>q will need rust to be compiled, so download it [here](https://rust-lang.org). Once you've downloaded rust, clone the repo:
 ```
 $ git clone https://github.com/unstable-errors/q-q.git
 ```
