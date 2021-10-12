@@ -27,7 +27,7 @@ fn main() {
     let selections = &["Apps", "Games", "Other", "About", "Exit"]; // types of apps
     let appslist = &["clock", "Exit"]; // apps
     let gameslist = &["guessing_game", "Exit"]; // games
-    let otherlist = &["progress_bar_test", "python", "Exit"]; // other
+    let otherlist = &["progress_bar_test", "Exit"]; // other
     let aboutlist = &["credits", "Exit"]; // about
 
     let selection = Select::with_theme(&ColorfulTheme::default()) // get category
