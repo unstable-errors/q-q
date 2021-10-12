@@ -14,13 +14,6 @@ on:
         default: '--release --verbose'
         # Input has to be provided for the workflow to run
         required: true
-      python:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'python version'
-        # Default value if no value is explicitly provided
-        default: '3.9'
-        # Input has to be provided for the workflow to run
-        required: true
 env:
   CARGO_TERM_COLOR: always
 jobs:
@@ -44,13 +37,6 @@ jobs:
             
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ github.event.inputs.python }}
-    - name: Display Python version
-      run: python -c "import sys; print(sys.version)"
-
     - name: Install rust toolchain
       uses: actions-rs/toolchain@v1
       with:
@@ -83,13 +69,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ github.event.inputs.python }}
-    - name: Display Python version
-      run: python -c "import sys; print(sys.version)"
-
     - name: Install rust toolchain
       uses: actions-rs/toolchain@v1
       with:
@@ -123,13 +102,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ github.event.inputs.python }}
-    - name: Display Python version
-      run: python -c "import sys; print(sys.version)"
-
     - name: Install rust toolchain
       uses: actions-rs/toolchain@v1
       with:
