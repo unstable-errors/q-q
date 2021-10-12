@@ -20,4 +20,3 @@ termimad = "0.16.2"
 crossterm = "0.21.0"
 chrono = "0.4.19"
 colored = "2.0.0"
-pyo3 = { version = "0.14.5", features = ["auto-initialize"] }
