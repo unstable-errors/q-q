@@ -32,7 +32,7 @@ If you want to compile but not install or run q>q, all you need to do is run `ca
 
 To run q>q, you need to install q>q and run `cargo run` in the directory of the installation.
 
-# Recources
+# Resources
 
  - [Wiki](https://github.com/unstable-errors/q-q/wiki)
  - [Rust](https://www.rust-lang.org/)

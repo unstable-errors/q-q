@@ -16,11 +16,11 @@ rand = "0.8.4"
 dialoguer = "0.8.0"
 indicatif = "0.16.2"
 lazy_static = "1.4.0"
-termimad = "0.15.0"
+termimad = "0.16.2"
 crossterm = "0.21.0"
 chrono = "0.4.19"
 colored = "2.0.0"
 
 [dependencies.pyo3]
-version = "0.14.4"
+version = "0.14.5"
 features = ["auto-initialize"]
