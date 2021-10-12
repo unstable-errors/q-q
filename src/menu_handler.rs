@@ -25,10 +25,6 @@ pub fn launch_app(app: &str) {
         println!("Bye!");
     } else if app == "guessing_game" {
         games::guessing_game::guessing_game();
-    } else if app == "python" {
-        other::python::python()
-            .map_err(|err| println!("{:?}", err))
-            .ok();
     } else if app == "progress_bar_test" {
         other::progress_bar_test::progress_bar_test();
     } else if app == "clock" {
