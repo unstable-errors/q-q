@@ -91,8 +91,7 @@ dependabot - will hopefully help us
 
 ## Testing
 SoupDevHub - Windows
-electron271 - Debian
-
+electron271 - Linux
 ## Special thanks
 My Cat - motivation
 You - ..if you contributed (Actually, we really appreciate you for even launching this application)
@@ -103,14 +102,12 @@ q>q is not designed to be useful. It is a proof of concept application and also 
 Check out everyone mentioned (yes including yourself)
 
 ## Any questions?
-If you have any further questions, make a issue
-Here are some simple questions:
+If you have any further questions, make a discussion on github.
 
 
 Let's be serious, thank you so much for viewing our application!
 I never thought anyone would even TRY this application! ♥
 As I say this of September 2, it's been 4 days since this has been made.
-This project was made because f̷̧̹̫͓̪͎̮̠͓̙̝̯̫͙͇̼̯̌͋̈̐̓͋̅̎̔̀̈́̉͛̂͑̏̈́̆̄̏͂̍̒̽̊͗̇͐̕̕̕̚͜͝͠͠͠͝ͅį̴̨̛̛͕̬̫̝̼̫͈̯͙̼͚̮̞̈́͐̉̅͂͐̆͂͆̇̒̇̋̔̾̋̋͌̐̎̒̒̏̀̍̂͒̓̄̒̈́͂̎͊́̔́͘̕͜͝͠͝͠ͅs̴̡̡̢̛̮̥͎̞͚̥͔̗͎̭̻̺̫̺̺̗̖̜̻̤̭̪̝̗̙̻̞̮̙̣̦̻̘̾̋̈́̍̅͋̀͗̈́̆̀̽̃̉̿͐̾̾̈́̀̇̒̉̂͒̃͌̇͗͛͌̀͌̉́͘͘͝͠͠͝ ̵̢̨̨̯̯̦͈͉̳̜͈̞̠̰̮̫͔͇̗͉͕͙̣̹̠̜̮̳͙͕͈̌̿̄͜ͅ
 
 Press [Q] or [esc] to exit
 "#;
