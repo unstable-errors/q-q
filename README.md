@@ -11,40 +11,5 @@
     <img src="https://img.shields.io/github/commit-activity/m/unstable-errors/q-q?style=for-the-badge"/>
   </p>
   
-# Documentation
-
-To compile/install/run q>q, you need rust, which you can install [here](https://www.rust-lang.org/tools/install). You will also need to run `git clone https://github.com/unstable-errors/q-q.git` if you're on Linux/MacOS. If you're on Windows download and unzip the zip file of the source code. If there is a release, get the source code (or the binary and run that!)
-
- - [Installing](#Installing)
- - [Compiling](#Compiling)
- - [Running](#Running)
- - [Credits](#Credits)
-
-### Installing
-
-To install q>q, you need to compile the source code and run `cargo install --path=.` in the directory of the compiled source code.
-
-### Compiling
-
-If you want to compile but not install or run q>q, all you need to do is run `cargo build` in the directory of the source code to compile it.
-
-### Running
-
-To run q>q, you need to install q>q and run `cargo run` in the directory of the installation.
-
-# Resources
-
- - [Wiki](https://github.com/unstable-errors/q-q/wiki)
- - [Rust](https://www.rust-lang.org/)
-
-# Credits
-
-[Soup](https://github.com/SoupDevHub) - Main Documentor, Windows testing
-> OS: Windows
->
-> Langs: JS, Python, Does C# off github
-
-[electron271](https://github.com/electron271) - Development, Documentation, Linux testing and Github Actions
-> OS: Linux
-> 
-> Langs: Shell, Rust, C++, used to do Python
+# Install
+You can install q>q either by compiling it yourself [(instructions)](INSTALL.md) or downloading a prebuilt binary using `cargo install q-q`
