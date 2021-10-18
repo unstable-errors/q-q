@@ -79,11 +79,10 @@ pub fn credits() -> Result<(), Error> {
 }
 
 static MD: &str = r#"# Credits
-Well, this will be a long trip.. use the up and down arrows to scroll (⇅)
 
 ## Documentation
 SoupDevHub - README.md (most of it)
-electron271 - README.md (minor changes), CONTRIBUTING.md
+electron271 - README.md (minor changes), CONTRIBUTING.md INSTALL.md
 
 ## Code
 electron271 - all of the code
@@ -99,15 +98,5 @@ You - ..if you contributed (Actually, we really appreciate you for even launchin
 ## DISCLAMER (yes really)
 q>q is not designed to be useful. It is a proof of concept application and also just a fun application to use when you're bored!
 
-Check out everyone mentioned (yes including yourself)
-
-## Any questions?
-If you have any further questions, make a discussion on github.
-
-
-Let's be serious, thank you so much for viewing our application!
-I never thought anyone would even TRY this application! ♥
-As I say this of September 2, it's been 4 days since this has been made.
-
-Press [Q] or [esc] to exit
+**Press [Q] or [ESC] to exit.**
 "#;
