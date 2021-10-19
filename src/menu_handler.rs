@@ -15,7 +15,7 @@
 // You should have received a copy of the GNU General Public License
 // along with q>q.  If not, see <http://www.gnu.org/licenses/>.
 
-use crate::apps;
+use crate::apps; // apps
 use crate::credits; // credits
 use crate::games; // games
 use crate::other; // other // apps
