@@ -12,4 +12,4 @@
   </p>
   
 # Install
-You can install q>q either by compiling it yourself [(instructions)](INSTALL.md) or compiling a version easily using `cargo install q-q`.
+You can install q>q either by compiling it yourself [(instructions)](docs/INSTALL.md) or compiling a version easily using `cargo install q-q`.
