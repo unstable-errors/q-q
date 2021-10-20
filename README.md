@@ -11,5 +11,8 @@
     <img src="https://img.shields.io/github/commit-activity/m/unstable-errors/q-q?style=for-the-badge"/>
   </p>
   
-# Install
-You can install q>q either by compiling it yourself [(instructions)](INSTALL.md) or compiling a version easily using `cargo install q-q`.
+# Quickstart
+Run `cargo install q-q` for a quick start (Needs rust to be installed)
+
+## Other install options
+You can install q>q by compiling it yourself [(instructions)](docs/INSTALL.md) as another method.

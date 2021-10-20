@@ -3,7 +3,7 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-use crate::apps;
+use crate::apps; // apps
 use crate::credits; // credits
 use crate::games; // games
 use crate::other; // other // apps

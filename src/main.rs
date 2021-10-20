@@ -6,7 +6,7 @@
 use dialoguer::{theme::ColorfulTheme, Select}; // menu
 
 pub mod apps; // get the apps
-pub mod credits;
+pub mod credits; // get the credits
 pub mod games; // get the games
 pub mod menu_handler; // get the menu handler
 pub mod other; // get the other apps // credits
