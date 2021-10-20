@@ -1,3 +1,8 @@
+// Copyright (c) 2021 unstable-errors
+// 
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
 use crate::apps;
 use crate::credits; // credits
 use crate::games; // games

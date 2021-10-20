@@ -1,3 +1,8 @@
+// Copyright (c) 2021 unstable-errors
+// 
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
 use dialoguer::{theme::ColorfulTheme, Select}; // menu
 
 pub mod apps; // get the apps
