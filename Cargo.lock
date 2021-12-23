@@ -87,12 +87,12 @@ dependencies = [
 
 [[package]]
 name = "coolor"
-version = "0.3.0"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "abae1f425167dae5fdb4c953e6205565a9a1cc252c33b7414cedd02e424243f4"
+checksum = "b78645ef095d812eecfa830f67e35394314e31be71fdba59543274542c950013"
 dependencies = [
  "ansi_colours",
- "crossterm",
+ "crossterm 0.22.1",
 ]
 
 [[package]]
@@ -170,7 +170,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "486d44227f71a1ef39554c0dc47e44b9f4139927c75043312690c3f476d1d788"
 dependencies = [
  "bitflags",
- "crossterm_winapi",
+ "crossterm_winapi 0.8.0",
+ "libc",
+ "mio",
+ "parking_lot",
+ "signal-hook",
+ "signal-hook-mio",
+ "winapi",
+]
+
+[[package]]
+name = "crossterm"
+version = "0.22.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c85525306c4291d1b73ce93c8acf9c339f9b213aef6c1d85c3830cbf1c16325c"
+dependencies = [
+ "bitflags",
+ "crossterm_winapi 0.9.0",
  "libc",
  "mio",
  "parking_lot",
@@ -184,6 +200,15 @@ name = "crossterm_winapi"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3a6966607622438301997d3dac0d2f6e9a90c68bb6bc1785ea98456ab93c0507"
+dependencies = [
+ "winapi",
+]
+
+[[package]]
+name = "crossterm_winapi"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2ae1b35a484aa10e07fe0638d02301c5ad24de82d310ccbd2f3693da5f09bf1c"
 dependencies = [
  "winapi",
 ]
@@ -403,7 +428,7 @@ version = "0.1.1"
 dependencies = [
  "chrono",
  "colored",
- "crossterm",
+ "crossterm 0.21.0",
  "dialoguer",
  "indicatif",
  "lazy_static",
@@ -562,13 +587,13 @@ dependencies = [
 
 [[package]]
 name = "termimad"
-version = "0.19.0"
+version = "0.19.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f6981ef35a70dfb4e78037a4ac33ce5a64233c6566592698a9d1c3bdda64271f"
+checksum = "d038a6d61e13ee0b7a44e0ef4555817287bb0cfded3b43cc547ad15f854c8ded"
 dependencies = [
  "coolor",
  "crossbeam",
- "crossterm",
+ "crossterm 0.22.1",
  "minimad",
  "thiserror",
  "unicode-width",
