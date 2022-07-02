@@ -86,18 +86,22 @@ SoupDevHub - README.md (most of it)
 electron271 - README.md (minor changes), CONTRIBUTING.md INSTALL.md
 
 ## Code
-electron271 - all of the code
+electron271 - most of the code
+other people - the rest of the code
 dependabot - will hopefully help us
 
 ## Testing
 SoupDevHub - Windows
 electron271 - Linux
+
 ## Special thanks
 My Cat - motivation
 You - ..if you contributed (Actually, we really appreciate you for even launching this application)
 
 ## DISCLAMER (yes really)
-q>q is not designed to be useful. It is a proof of concept application and also just a fun application to use when you're bored!
+q>q is not designed to be useful (yet). It is a proof of concept application and also just a fun application to use when you're bored!
+
+made in rust with love
 
 **Press [Q] or [ESC] to exit.**
 "#;
