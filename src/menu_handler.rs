@@ -10,7 +10,7 @@ use crate::other; // other // apps
 
 pub fn launch_app(app: &str) {
     if app == "Exit" {
-        println!("Bye!");
+        println!("Bye!"); // TODO: should maybe go back in the menu, just exits the program currently
     } else if app == "guessing_game" {
         games::guessing_game::guessing_game();
     } else if app == "progress_bar_test" {
