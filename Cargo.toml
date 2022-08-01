@@ -14,7 +14,7 @@ repository = "https://github.com/unstable-errors/q-q"
 [dependencies]
 rand = "0.8.5"
 dialoguer = "0.10.2"
-indicatif = "0.16.2"
+indicatif = "0.17.0"
 lazy_static = "1.4.0"
 termimad = "0.20.2"
 crossterm = "0.23.2"
