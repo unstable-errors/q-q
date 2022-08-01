@@ -22,10 +22,10 @@ pub fn progress_bar_test() {
     let mut rng = rand::thread_rng();
 
     let pb = ProgressBar::new(total_size);
-    pb.set_style(ProgressStyle::default_bar()
-        .template("{spinner:.green} [{elapsed_precise}] [{wide_bar:.cyan/blue}] {bytes}/{total_bytes} ({eta})")
+    pb.set_style(ProgressStyle::with_template("{spinner:.green} [{elapsed_precise}] [{wide_bar:.cyan/blue}] {bytes}/{total_bytes} ({bytes_per_sec}, {eta})")
+        .unwrap()
         .progress_chars("#>-"));
-
+    
     while downloaded < total_size {
         let new = min(downloaded + 223211, total_size);
         downloaded = new;
