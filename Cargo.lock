@@ -92,7 +92,7 @@ version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "af4d7a805ca0d92f8c61a31c809d4323fdaa939b0b440e544d21db7797c5aaad"
 dependencies = [
- "crossterm",
+ "crossterm 0.23.2",
 ]
 
 [[package]]
@@ -175,6 +175,22 @@ name = "crossterm"
 version = "0.23.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a2102ea4f781910f8a5b98dd061f4c2023f479ce7bb1236330099ceb5a93cf17"
+dependencies = [
+ "bitflags",
+ "crossterm_winapi",
+ "libc",
+ "mio",
+ "parking_lot",
+ "signal-hook",
+ "signal-hook-mio",
+ "winapi",
+]
+
+[[package]]
+name = "crossterm"
+version = "0.25.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e64e6c0fbe2c17357405f7c758c1ef960fce08bdfb2c03d88d2a18d7e09c4b67"
 dependencies = [
  "bitflags",
  "crossterm_winapi",
@@ -420,7 +436,7 @@ version = "0.1.2"
 dependencies = [
  "chrono",
  "colored",
- "crossterm",
+ "crossterm 0.25.0",
  "dialoguer",
  "indicatif",
  "lazy_static",
@@ -560,7 +576,7 @@ checksum = "3977554523f42b473e5211e5fbb39e78e21e793ff6ffd6428ae3bd02dbb7e09d"
 dependencies = [
  "coolor",
  "crossbeam",
- "crossterm",
+ "crossterm 0.23.2",
  "minimad",
  "thiserror",
  "unicode-width",
